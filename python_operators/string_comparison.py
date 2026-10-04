@@ -1,0 +1,6 @@
+first = input("Enter first string: ")
+second = input("Enter second string: ")
+print("Equal:", first == second)
+print("Not equal:", first != second)
+print("First greater:", first > second)
+print("First less:", first < second)

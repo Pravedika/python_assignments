@@ -1,0 +1,10 @@
+name = input("Enter student name: ")
+age = int(input("Enter age: "))
+marks = [float(input(f"Enter marks for subject {i}: ")) for i in range(1, 4)]
+total = sum(marks)
+average = total / len(marks)
+eligible = age >= 18 and average >= 60 and all(mark >= 40 for mark in marks)
+print("Student:", name)
+print("Total:", total)
+print("Average:", average)
+print("Eligible:", eligible)
